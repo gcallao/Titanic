@@ -17,6 +17,9 @@ shinyUI(fluidPage(
                         
                         h5("The data used to train the models and to obtain the perfomance indicators belong to the famous competition at 
                            Kaggle, ", a("Titanic: Machine Learning from Disaster", href = "https://www.kaggle.com/c/titanic-gettingStarted")),
+                        
+                        h5("In the box below select one the complexity levels for growing a decision tree with certain depth. All 
+                           probabilities and decisions are automatically updated."),
 
                         selectInput("select", label = h6("Decision Tree Complexity"),
                                     c("Default", "Low", "High"), selected = "Default"),
